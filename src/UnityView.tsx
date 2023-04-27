@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { NativeModules, requireNativeComponent, View, ViewProps, ViewPropTypes } from 'react-native'
+import { NativeModules, requireNativeComponent, View, ViewProps } from 'react-native'
 import * as PropTypes from 'prop-types'
 import MessageHandler from './MessageHandler'
 import { UnityModule, UnityViewMessage } from './UnityModule'
@@ -23,10 +23,10 @@ export interface UnityViewProps extends ViewProps {
 let NativeUnityView
 
 class UnityView extends Component<UnityViewProps> {
-    public static propTypes = {
-        ...ViewPropTypes,
-        onMessage: PropTypes.func
-    }
+//     public static propTypes = {
+//         ...ViewPropTypes,
+//         onMessage: PropTypes.func
+//     }
 
     constructor(props) {
         super(props);
